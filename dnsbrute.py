@@ -16,7 +16,8 @@ def start():
             conexao = dns.resolver.query(done, 'a')
             print('Code 200 :', done, conexao)
 
-    except Exception:
+    except Exception as error:
+        print ("Error: " + str(error))
         pass
 
 banner()
